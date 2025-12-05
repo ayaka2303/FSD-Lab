@@ -1,0 +1,9 @@
+npm init -y
+npm install express mongoose dotenv
+
+
+npm install mongodb
+
+mongodb+srv://dbuser:<db_password>@fsd-lab.1qd44qk.mongodb.net/?appName=fsd-lab
+
+node app.js
