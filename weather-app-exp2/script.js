@@ -1,6 +1,6 @@
-// IMPORTANT: consider regenerating your key if you've shared it publicly.
+
 const RAW_API_KEY = 'e8687d759b59173bf2c6bc3513364ca8';
-const API_KEY = RAW_API_KEY.trim(); // avoid trailing spaces/newlines
+const API_KEY = RAW_API_KEY.trim(); 
 
 const weatherInfoDiv = document.getElementById('weatherInfo');
 const cityInput = document.getElementById('cityInput');
@@ -12,12 +12,12 @@ async function getWeatherData(city) {
   const cityParam = encodeURIComponent(city.trim());
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityParam}&appid=${API_KEY}&units=metric`;
 
-  console.log('[Weather] Fetching:', apiUrl); // copy-paste this URL in your browser to test
+  console.log('[Weather] Fetching:', apiUrl); 
 
   try {
     const response = await fetch(apiUrl);
 
-    // Always try to read the JSON body (OWM puts error details here)
+    
     const body = await response.json().catch(() => null);
 
     if (!response.ok) {
