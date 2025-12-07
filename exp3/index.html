@@ -1,99 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anagha S Nayak - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anagha S Nayak | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow"></div>
 
-    <header class="sidebar">
-        <img src="https://i.ibb.co/mCsrtQCP/profile.jpg" class="profile-img" alt="Anagha">
-        <h2>Anagha S Nayak</h2>
-        <p>Student | Data Analyst Aspirant</p>
+  <!-- BACKGROUND BLOBS -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="logo">ANAGHA</span>
+    </div>
+    <nav class="nav-right">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <main>
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero reveal">
+      <div class="hero-text">
+        <p class="hero-tag">Hi, I'm</p>
+        <h1 class="hero-title">Anagha Nayak</h1>
+        <p class="hero-subtitle" id="typewriter">Student · Aspiring Data Analyst</p>
+        <p class="hero-desc">
+          Turning data into stories using Python, SQL, dashboards and a little bit of design.
+          Exploring analytics, AI and full-stack development one project at a time.
+        </p>
 
-        <!-- ABOUT -->
-        <section id="about">
-            <h1>About Me</h1>
-            <p>
-                I am Anagha S Nayak, a passionate and detail-oriented student exploring 
-                the world of Data Analytics and Data-Driven Problem Solving. I enjoy 
-                uncovering insights and transforming raw data into meaningful stories. 
-                My interests span data preprocessing, exploratory analysis, dashboard 
-                creation, and applying machine learning techniques to identify patterns. 
-                With growing skills in Python, SQL, Power BI, and statistics, I aim to 
-                contribute to impactful analytical work and continuously improve my 
-                technical abilities.
-            </p>
-        </section>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-outline">Let’s Talk</a>
+        </div>
 
-        <!-- SKILLS -->
-        <section id="skills">
-            <h1>Skills</h1>
+        <div class="social-row">
+          <span class="social-label">Find me on</span>
 
-            <div class="skill"><span>Python</span><div class="bar"><div style="width:85%"></div></div></div>
-            <div class="skill"><span>SQL</span><div class="bar"><div style="width:80%"></div></div></div>
-            <div class="skill"><span>Data Visualization (Power BI / Tableau)</span><div class="bar"><div style="width:75%"></div></div></div>
-            <div class="skill"><span>Excel</span><div class="bar"><div style="width:85%"></div></div></div>
-            <div class="skill"><span>Machine Learning (Basics)</span><div class="bar"><div style="width:70%"></div></div></div>
-            <div class="skill"><span>HTML/CSS</span><div class="bar"><div style="width:65%"></div></div></div>
-            <div class="skill"><span>JavaScript</span><div class="bar"><div style="width:55%"></div></div></div>
+          <a class="social-btn github" href="https://github.com/ayaka2303" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 0.5C5.37 0.5 0 5.87 0 12.5c0 5.29 3.438 9.773 8.207 11.366.6.111.82-.26.82-.577 0-.285-.011-1.04-.017-2.04-3.338.726-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.42-1.305.763-1.605-2.665-.304-5.467-1.333-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.018.005 2.044.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.807 5.624-5.48 5.921.431.372.815 1.102.815 2.222 0 1.604-.015 2.896-.015 3.29 0 .32.216.694.825.576C20.565 22.27 24 17.788 24 12.5 24 5.87 18.627 0.5 12 0.5Z" />
+            </svg>
+          </a>
 
-        </section>
+          <a class="social-btn linkedin" href="https://www.linkedin.com/in/anaghanayak/" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.32 8.16h4.36V24H.32V8.16zM8.34 8.16h4.18v2.15h.06c.58-1.1 2-2.26 4.12-2.26 4.4 0 5.21 2.9 5.21 6.67V24h-4.36v-8.14c0-1.94-.03-4.43-2.7-4.43-2.7 0-3.11 2.11-3.11 4.29V24H8.34V8.16z" />
+            </svg>
+          </a>
+        </div>
+      </div>
 
-        <!-- RESUME -->
-        <section id="resume">
-            <h1>Resume</h1>
-            <p><strong>Address:</strong> Bangalore</p>
-            <p><strong>Mobile:</strong> 6364669888</p>
-            <p><strong>Email:</strong> anagha.nhce@gmail.com</p>
-        </section>
+      <div class="hero-image">
+        <div class="hero-image-bg"></div>
+        <img src="https://i.ibb.co/CKRPgHC9/Whats-App-Image-2025-12-07-at-2-17-54-PM.jpg" alt="Anagha profile" />
+        <div class="signature">
+          <span class="signature-text">Anagha</span>
+        </div>
+      </div>
+    </section>
 
-        <!-- CONTACT -->
-        <section id="contact">
-            <h1>Contact Me</h1>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section reveal">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">A quick snapshot</p>
+      <div class="about-card">
+        <p>
+          I am a final year Computer Science and Engineering (Data Science) student, interested in
+          data analytics, storytelling with dashboards, and building useful tools. I enjoy
+          exploring datasets, cleaning and transforming them, and turning patterns into
+          visual insights.
+        </p>
+        <p>
+          My work spans Python, SQL, Tableau and basic web development. I like mixing technical
+          skills with aesthetics — clean interfaces, readable visuals and experiences that feel
+          simple and intuitive.
+        </p>
+        <p>
+          I’m curious, detail-oriented and always experimenting with new ideas, whether it’s an
+          AI-powered project, an analysis notebook or a neat front-end concept.
+        </p>
+      </div>
+    </section>
 
-            <form id="myForm" class="contact-form">
-                <div class="form-group">
-                    <label>Your Name</label>
-                    <input type="text" name="name" required>
-                </div>
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section reveal">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-subtitle">Tools & areas I work with</p>
 
-                <div class="form-group">
-                    <label>Your Email</label>
-                    <input type="email" name="email" required>
-                </div>
+      <div class="pill-row">
+        <span class="pill">Python</span>
+        <span class="pill">Pandas & NumPy</span>
+        <span class="pill">SQL / MySQL</span>
+        <span class="pill">Data Visualization</span>
+        <span class="pill">Tableau</span>
+        <span class="pill">Statistics Basics</span>
+        <span class="pill">HTML / CSS / JS</span>
+      </div>
+    </section>
 
-                <div class="form-group">
-                    <label>Subject</label>
-                    <input type="text" name="subject">
-                </div>
+    <!-- TIMELINE SECTION -->
+    <section id="timeline" class="section reveal">
+      <h2 class="section-title">Timeline</h2>
+      <p class="section-subtitle">Education & highlights</p>
 
-                <div class="form-group">
-                    <label>Message</label>
-                    <textarea name="message" rows="5"></textarea>
-                </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-bullet"></div>
+          <div class="timeline-content">
+            <p class="timeline-year">2022 – Present</p>
+            <h3>B.E. CSE (Data Science), New Horizon College of Engineering</h3>
+            <p>CGPA: 8.9+ | Final year with focus on data analytics, ML and full-stack projects.</p>
+          </div>
+        </div>
 
-                <button type="submit" class="submit-btn">Submit</button>
-            </form>
+        <div class="timeline-item">
+          <div class="timeline-bullet"></div>
+          <div class="timeline-content">
+            <p class="timeline-year">2020 – 2022</p>
+            <h3>XII – PCMC (CBSE)</h3>
+            <p>Completed higher secondary education with core focus on Physics, Chemistry, Math & Computer Science.</p>
+          </div>
+        </div>
 
+        <div class="timeline-item">
+          <div class="timeline-bullet"></div>
+          <div class="timeline-content">
+            <p class="timeline-year">2018 – 2020</p>
+            <h3>X – CBSE</h3>
+            <p>Built a strong academic foundation and started exploring programming and problem solving.</p>
+          </div>
+        </div>
 
-        </section>
+        <div class="timeline-item">
+          <div class="timeline-bullet"></div>
+          <div class="timeline-content">
+            <p class="timeline-year">2024</p>
+            <h3>Hackathons & Volunteering</h3>
+            <p>Participated in national-level SAP ERPsim hackathon and volunteered at tech events like NASSCOM FutureForge & SAP ACC India.</p>
+          </div>
+        </div>
 
-    </main>
+        <div class="timeline-item">
+          <div class="timeline-bullet"></div>
+          <div class="timeline-content">
+            <p class="timeline-year">2023 – 2024</p>
+            <h3>Basketball & Teamwork</h3>
+            <p>Represented college in VTU basketball tournaments, learning teamwork, resilience and discipline on-court.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section reveal">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">Some things I’ve built & analysed</p>
+
+      <div class="cards-grid">
+        <div class="project-card" data-project="careercastle">
+          <div class="project-tag">Web · AI · NLP</div>
+          <h3>CareerCastle – AI Resume Builder & Analyser</h3>
+          <p>
+            A web platform that helps users generate and analyse resumes using AI, with
+            a clean UI and backend logic for content scoring and suggestions.
+          </p>
+          <span class="project-link">Click to view details →</span>
+        </div>
+
+        <div class="project-card" data-project="mutualfund">
+          <div class="project-tag">Python · Finance</div>
+          <h3>Mutual Fund Analysis</h3>
+          <p>
+            Python-based analysis of mutual funds focusing on returns, risk and trend
+            visualizations using Pandas, NumPy and plotting libraries.
+          </p>
+          <span class="project-link">Click to view details →</span>
+        </div>
+
+        <div class="project-card" data-project="disney">
+          <div class="project-tag">Data Viz</div>
+          <h3>Disney Movies – Exploratory Dashboard</h3>
+          <p>
+            Exploratory visualizations on Disney movie data, highlighting trends across
+            genres, ratings and box-office performance using dashboard tools.
+          </p>
+          <span class="project-link">Click to view details →</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section reveal">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">Say hi or send a collab idea</p>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <p><strong>Location:</strong> Bangalore, India</p>
+          <p><strong>Email:</strong> <a href="mailto:anagha.nhce@gmail.com">anagha.nhce@gmail.com</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/ayaka2303" target="_blank">github.com/ayaka2303</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anaghanayak/" target="_blank">linkedin.com/in/anaghanayak</a></p>
+        </div>
+
+        <!-- Experiment-3 contact form -->
+        <form id="myForm" class="contact-form">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" name="name" required />
+          </div>
+          <div class="form-group">
+            <label>Your Email</label>
+            <input type="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="5"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- PROJECT MODAL -->
+  <div id="projectModal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-tag" id="modalTag"></div>
+      <h3 id="modalTitle"></h3>
+      <p id="modalBody"></p>
+      <a id="modalLink" href="#" target="_blank" class="btn-primary modal-btn">Open on GitHub</a>
+    </div>
+  </div>
+
+  <!-- SCROLL TO TOP BUTTON -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Anagha S Nayak · Built with curiosity, code & coffee.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
