@@ -1,0 +1,57 @@
+node -v , npm -v
+npm install -g @angular/cli
+ng version
+
+
+ng new exp7-student-form
+cd exp7-student-form
+ng serve -o
+
+
+
+if version doesnt match: app.html
+
+<div class="container">
+  <h3>Student Registration</h3>
+
+  <form #studentForm="ngForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="studentName">Student Name</label>
+
+      <input type="text"
+        id="studentName"
+        name="studentName"
+        [(ngModel)]="studentModel.studentName"
+        required
+        #name="ngModel">
+
+      <div *ngIf="name.invalid && name.touched" class="error-message">
+        Student Name is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="usn">USN Number</label>
+
+      <input type="text"
+        id="usn"
+        name="usn"
+        [(ngModel)]="studentModel.usn"
+        required
+        #usn="ngModel">
+
+      <div *ngIf="usn.invalid && usn.touched" class="error-message">
+        USN Number is required.
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="studentForm.invalid">
+      Register
+    </button>
+
+  </form>
+</div>
+
+
+use this with the pdf version ig
