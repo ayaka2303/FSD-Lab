@@ -3,6 +3,8 @@ npm install -g @angular/cli
 ng version
 
 
+use npm install to install dependancies
+
 ng new exp7-student-form
 cd exp7-student-form
 ng serve -o
