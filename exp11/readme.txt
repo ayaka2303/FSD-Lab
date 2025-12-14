@@ -3,7 +3,7 @@ cd server
 npm install
 npm install dotenv
 .env: MONGODB_URI=mongodb+srv://dbuser:<password>@fsd-lab.1qd44qk.mongodb.net/?appName=fsd-lab
-pwd: iamdbuser
+iamdbuser
 npm start
 
 #step b
